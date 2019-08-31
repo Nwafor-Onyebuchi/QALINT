@@ -32,7 +32,7 @@
             <li><a href="open_source.html" class="navlink">Open Source</a></li>
             <li><a href="contact.html" class="navlink">Contact Us</a></li>
           </ul>
-          <div class="menu-btn">
+          <div class="menu-btn hide-lg show-sm" onclick="openNav()">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
@@ -42,6 +42,18 @@
         </div> 
       </div>
     </header>
+
+    <div class="mobile-menu overlay hide-lg" id="myNav" style="visibility: hidden">
+        <div class="overlay-content">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li><a href="index.html" class="navlink">Home</a></li>
+                <li><a href="hire.html" class="navlink">Hire</a></li>
+                <li><a href="open_source.html" class="navlink">Open Source</a></li>
+                <li><a href="contact.html" class="navlink">Contact Us</a></li>
+              </ul>
+        </div>
+      </div>
 
     <section id="home" class="container home">
      

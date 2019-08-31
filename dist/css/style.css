@@ -71,6 +71,42 @@ nav ul li {
   visibility: hidden
 }
 
+.overlay {
+  height: 100%;
+  background-color: #8451a1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.overlay-content{
+  top: 40px
+}
+
+.overlay-content ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  top: 40px;
+}
+
+.overlay-content a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.overlay-content a:hover {
+  text-decoration: underline;
+}
+
+.overlay .closebtn {
+  font-size: 70px;
+  float: right;
+  top: 0px;
+  }
+
 .menu-btn .btn-line{
   background-color: #fff;
   height: 3px;
