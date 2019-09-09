@@ -25,7 +25,7 @@ function closeNav() {
 
 const chat = () => {
   reply = document.querySelector('.res-in').value;
-  document.querySelector('#incoming').innerHTML += reply;
+  document.querySelector('#incoming').innerHTML = reply;
   document.querySelector('#incoming').classList.add('incoming')
 }
 
