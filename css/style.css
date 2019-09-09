@@ -230,8 +230,11 @@ kbd {
   font-style: italic;
   font-size: 20px;
   text-align: center; 
-  z-index: ;
   margin-bottom: 50px;
+}
+
+.contact-details a{
+  color: #8451a1;
 }
 
 .conversational-form{
