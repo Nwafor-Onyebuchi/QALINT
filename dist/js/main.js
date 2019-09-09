@@ -23,12 +23,14 @@ function closeNav() {
   document.getElementById("myNav").style.visibility = "hidden";
 }
 
-const chat = () => {
+const chat = ($event) => {
+  $event.preventDefault();
   reply = document.querySelector('.res-in').value;
   document.querySelector('#incoming').innerHTML = reply;
   document.querySelector('#incoming').classList.add('incoming')
+  document.querySelector('#comment-form').reset();
 }
 
-document.getElementById('btn').addEventListener('click', chat);
+document.querySelector('#btn').addEventListener('click', chat);
 
 
