@@ -15,22 +15,55 @@ window.onscroll = () => {
   prevScrollPos = currentScrollPos;
 };
 
+//Show mobile menu
 function openNav() {
   document.getElementById("myNav").style.visibility = "visible";
 }
 
+//close mobile menu
 function closeNav() {
   document.getElementById("myNav").style.visibility = "hidden";
 }
 
-const chat = ($event) => {
+//Handle click event to submit response
+const openChat = $event => {
   $event.preventDefault();
-  reply = document.querySelector('.res-in').value;
-  document.querySelector('#incoming').innerHTML = reply;
-  document.querySelector('#incoming').classList.add('incoming')
-  document.querySelector('#comment-form').reset();
-}
+  reply = document.querySelector(".res-in");
+  const username = reply.value;
+  const userResponse = document.createElement("p");
+  const botResponse = document.createElement("p");
+  userResponse.textContent = username;
+  botResponse.textContent =
+    "Welcome, " + username + ". Nice to meet you! Your email please";
+  document.querySelector(".history").appendChild(userResponse);
+  document.querySelector(".history").appendChild(botResponse);
+  userResponse.classList.add("incoming");
+  botResponse.classList.add("message-box");
+  document.querySelector("#comment-form").reset();
+  if (username.indexOf("@") !== -1) {
+    botResponse.textContent = "Great! Please enter your GitHub URL?";
+  }
+};
+document.querySelector("#btn").addEventListener("click", openChat);
 
-document.querySelector('#btn').addEventListener('click', chat);
-
-
+//Handle click event to submit response
+const hireChat = $event => {
+  $event.preventDefault();
+  reply = document.querySelector(".res-in");
+  let username = reply.value;
+  const userResponse = document.createElement("p");
+  const botResponse = document.createElement("p");
+  userResponse.textContent = username;
+  botResponse.textContent =
+    "Welcome, " + username + ". Nice to meet you! Your email please";
+  document.querySelector(".chat-history").appendChild(userResponse);
+  document.querySelector(".chat-history").appendChild(botResponse);
+  userResponse.classList.add("incoming");
+  botResponse.classList.add("message-box");
+  document.querySelector("#comment-form").reset();
+  if (username.indexOf("@") !== -1) {
+    companyName = "Great! What's your company name?";
+    botResponse.textContent = companyName;
+  }
+};
+document.querySelector("#btn").addEventListener("click", hireChat);
