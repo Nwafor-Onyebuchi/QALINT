@@ -52,7 +52,7 @@ const hireChat = $event => {
   reply = document.querySelector(".res-in");
   let username = reply.value;
   const userResponse = document.createElement("p");
-  const botResponse = document.createElement("p");
+  let botResponse = document.createElement("p");
   userResponse.textContent = username;
   botResponse.textContent =
     "Welcome, " + username + ". Nice to meet you! Your email please";
@@ -64,6 +64,9 @@ const hireChat = $event => {
   if (username.indexOf("@") !== -1) {
     companyName = "Great! What's your company name?";
     botResponse.textContent = companyName;
+  } else if (username.includes("github") === true) {
+    botResponse.textContent =
+      "Thanks! Is there something else you'd like us to know?";
   }
 };
 document.querySelector("#btn").addEventListener("click", hireChat);

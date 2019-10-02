@@ -254,6 +254,7 @@ kbd {
   padding: 15px;
   color: #ebebeb;
   border-radius: 20px 4px 20px 20px;
+  margin-left: 145px;
 }
 
 .res-in {
@@ -280,9 +281,6 @@ kbd {
   border-radius: 50%;
 }
 
-.incoming {
-  margin-left: 360px;
-}
 .response {
   float: left;
   background-color: #fff;
@@ -344,10 +342,6 @@ form {
     width: 50%;
     padding: 8px;
     line-height: 1.3;
-  }
-
-  .incoming {
-    margin-right: 10px;
   }
 
   .intro-message {
