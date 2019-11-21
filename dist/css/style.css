@@ -248,6 +248,9 @@ kbd {
   margin-bottom: 50px;
 }
 
+#contact {
+  padding-top: 120px;
+}
 .contact-details a {
   color: #8451a1;
 }
