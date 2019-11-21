@@ -2,7 +2,7 @@ const foot = document.querySelector("#foot01");
 foot.innerHTML =
   "<p style='color:#ACB3CC'>&copy; " +
   new Date().getFullYear() +
-  " <a href='' style='text-decoration:none'>Sursa Technology</a>. All right reserved.</p>";
+  " <a href='' style='text-decoration:none; color:#8451A1'>Testify</a>. All right reserved.</p>";
 /*Hide navbar on scroll*/
 let prevScrollPos = window.pageYOffset;
 window.onscroll = () => {
@@ -26,7 +26,7 @@ function closeNav() {
 }
 
 //Handle click event to submit response
-const openChat = $event => {
+const openChat = ($event) => {
   $event.preventDefault();
   reply = document.querySelector(".res-in");
   const username = reply.value.toLowerCase();
@@ -53,7 +53,7 @@ const openChat = $event => {
 document.querySelector("#btn").addEventListener("click", openChat);
 
 //Handle click event to submit response
-const hireChat = $event => {
+const hireChat = ($event) => {
   $event.preventDefault();
   reply = document.querySelector(".res-in");
   let username = reply.value.toLowerCase();
