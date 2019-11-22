@@ -17,14 +17,17 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Hire | QATest</title>
   </head>
-  <body>
+  <body style="background-image: linear-gradient(to left, #8451A1, #fff);">
     <header id="nav-header">
       <div class="header-container custom-container">
-        <div class="brand">
-          <h1 class="logo-text">
-            <span class="logo">QA</span><span class="logo-text">Test</span>
-          </h1>
-        </div>
+        <a href="index.html">
+          <div class="brand">
+            <h1 class="logo-text logo">
+              <span class="qa" style="color:#FFFF55 ;">QA</span
+              ><span class="logo-text">Test</span>
+            </h1>
+          </div>
+        </a>
         <nav class="nav">
           <ul>
             <li><a href="index.html" class="navlink">Home</a></li>
@@ -49,9 +52,11 @@
     >
       <div class="overlay-content">
         <div class="mobile-header">
-          <h1 class="logo-text logo">
-            <span class="qa">QA</span><span class="logo-text">Test</span>
-          </h1>
+          <a href="index.html">
+            <h1 class="logo-text logo">
+              <span class="qa">QA</span><span class="logo-text">Test</span>
+            </h1></a
+          >
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
             >&times;</a
           >
@@ -69,7 +74,27 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <form id="comment-form">
+            <img
+              src="images/bug_fix.svg"
+              alt="QATest bug_fix"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 display-right">
+            <h2>
+              Let's assist you...
+            </h2>
+            <p class="p1">
+              Hire Interns, Contract Staff, Permanent Staff, Manual tester,
+              Automation Engineers, e.t.c
+            </p>
+            <h2>
+              ...or become a...
+            </h2>
+            <a href="https://testify.org.ng" target="_blank"
+              ><p class="p2">QA Engineer</p></a
+            >
+            <form id="drop-mail">
               <fieldset class="input">
                 <button id="btn" class="submit">
                   <i class="fas fa-arrow-up"></i>
@@ -77,8 +102,9 @@
                 <input
                   required
                   type="text"
-                  placeholder="Type your reply here..."
+                  placeholder="Your email, please..."
                   class="response res-in"
+                  style="background: none; font-size: 20px; color: #ffffff;"
                 />
               </fieldset>
             </form>

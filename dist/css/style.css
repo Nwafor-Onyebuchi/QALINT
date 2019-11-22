@@ -241,40 +241,11 @@ kbd {
   padding-top: 10px;
 }
 
-.intro-message {
-  font-style: italic;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 #contact {
   padding-top: 120px;
 }
 .contact-details a {
   color: #8451a1;
-}
-
-.conversational-form {
-  position: absolute;
-  bottom: 60px;
-}
-
-.message-box {
-  width: 40%;
-  background-color: #ebebeb;
-  padding: 15px;
-  color: #8451a1;
-  border-radius: 4px 20px 20px 20px;
-}
-
-.incoming {
-  width: 40%;
-  background-color: #8451a1;
-  padding: 15px;
-  color: #ebebeb;
-  border-radius: 20px 4px 20px 20px;
-  margin-left: 145px;
 }
 
 .res-in {
@@ -285,9 +256,13 @@ kbd {
 .input {
   border-radius: 40px;
   padding: 8px;
-  box-shadow: 5px 5px 20px gray;
+  box-shadow: 5px 5px 20px #fff;
   margin-right: 20px;
   clear: both;
+}
+
+::placeholder {
+  color: #fff;
 }
 
 .fa-arrow-up {
@@ -308,8 +283,22 @@ kbd {
   outline: none;
 }
 
-form {
-  text-align: center;
+.display-right #drop-mail {
+  margin-top: 80px;
+}
+
+.display-right h2 {
+  font-size: 60px;
+  color: #fff;
+}
+.display-right p {
+  line-height: 2;
+  color: #fff;
+  font-size: 20px;
+}
+
+.p2 {
+  text-decoration: underline;
 }
 /*styling the mobile*/
 @media (max-width: 923px) {
